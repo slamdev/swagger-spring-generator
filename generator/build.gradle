@@ -6,6 +6,12 @@ plugins {
 }
 
 dependencies {
+    // for spec v3
+    // compile 'io.swagger.parser.v3:swagger-parser-v3:2.0.1'
+    // for spec v2
+    compile 'io.swagger.parser.v3:swagger-parser-v2-converter:2.0.0'
+    runtime 'ch.qos.logback:logback-classic:1.2.3'
+    testCompile 'junit:junit:4.12'
     annotationProcessor 'org.projectlombok:lombok:1.18.2'
     compileOnly 'org.projectlombok:lombok:1.18.2'
 }
