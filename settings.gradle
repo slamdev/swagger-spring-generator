@@ -1,0 +1,10 @@
+rootProject.name = 'swagger-spring-generator'
+
+include 'generator'
+include 'plugin'
+
+buildCache {
+    local {
+        directory = file('.gradle/build-cache').absolutePath
+    }
+}

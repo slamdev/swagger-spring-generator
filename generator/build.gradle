@@ -1,0 +1,11 @@
+plugins {
+    id 'java'
+    id 'pmd'
+    id 'checkstyle'
+    id 'findbugs'
+}
+
+dependencies {
+    annotationProcessor 'org.projectlombok:lombok:1.18.2'
+    compileOnly 'org.projectlombok:lombok:1.18.2'
+}

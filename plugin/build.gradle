@@ -1,0 +1,12 @@
+plugins {
+    id 'java-gradle-plugin'
+    id 'pmd'
+    id 'checkstyle'
+    id 'findbugs'
+}
+
+dependencies {
+    compile project(':generator')
+    annotationProcessor 'org.projectlombok:lombok:1.18.2'
+    compileOnly 'org.projectlombok:lombok:1.18.2'
+}
